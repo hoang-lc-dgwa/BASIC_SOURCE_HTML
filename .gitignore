@@ -1,0 +1,7 @@
+node_modules
+dist
+_dist
+preview
+_preview
+ftp/config.json
+.history

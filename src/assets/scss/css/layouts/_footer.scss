@@ -1,0 +1,35 @@
+.pagetop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: $TRANSITION_BASE;
+  width: 4.4rem;
+  height: 4.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: $SHADOW_BASE;
+  z-index: $Z_PAGETOP;
+
+  img {
+    width: 2rem;
+  }
+
+  &.is-active {
+    opacity: 1;
+    visibility: visible;
+
+    @include pc {
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+.footer {
+  background: red;
+}
